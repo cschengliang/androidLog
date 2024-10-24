@@ -1,4 +1,4 @@
----- TIME: 2024-10-24 23:51:30.893 ----
+---- TIME: 2024-10-25 00:05:58.873 ----
 Build configuration: [sf PRESENT_TIME_OFFSET=0 FORCE_HWC_FOR_RBG_TO_YUV=1 MAX_VIRT_DISPLAY_DIM=4096 RUNNING_WITHOUT_SYNC_FRAMEWORK=0 NUM_FRAMEBUFFER_SURFACE_BUFFERS=3]
 
 Display identification data:
@@ -24,7 +24,7 @@ Features
 
 Policy
     pacesetterDisplayId=4630946694713414275
-    layerHistory={size=109, active=0}
+    layerHistory={size=117, active=2}
     touchTimer=200.000 ms
     displayPowerTimer=nullopt
 
@@ -49,26 +49,26 @@ FrameFinder:
     FakeVsyncCount: 0
 debugDisplayModeSetByBackdoor=false
 
-ScreenOff: 0d14:03:15.766
-120.00 Hz: 0d05:41:33.360
-60.00 Hz: 0d05:27:54.303
-90.00 Hz: 0d00:00:19.291
+ScreenOff: 0d14:08:13.172
+120.00 Hz: 0d05:41:41.335
+60.00 Hz: 0d05:28:18.548
+90.00 Hz: 0d00:00:31.167
 
 Override: off
 
-           app phase:      7333333 ns	         SF phase:     -4000000 ns
-           app duration:  13666666 ns	         SF duration:  12333333 ns
-     early app phase:      7333333 ns	   early SF phase:     -4000000 ns
-     early app duration:  13666666 ns	   early SF duration:  12333333 ns
-  GL early app phase:      7333333 ns	GL early SF phase:     -4000000 ns
-  GL early app duration:  13666666 ns	GL early SF duration:  12333333 ns
+           app phase:      4555556 ns	         SF phase:     -4000000 ns
+           app duration:  13666666 ns	         SF duration:  15111111 ns
+     early app phase:      4555556 ns	   early SF phase:     -4000000 ns
+     early app duration:  13666666 ns	   early SF duration:  15111111 ns
+  GL early app phase:      4555556 ns	GL early SF phase:     -4000000 ns
+  GL early app duration:  13666666 ns	GL early SF duration:  15111111 ns
        HWC min duration:         0 ns
-         present offset:         0 ns	        VSYNC period:   8333333 ns
+         present offset:         0 ns	        VSYNC period:  11111111 ns
 
-app: state=Idle VSyncState={displayId=4630946694713414275, count=3386934, synthetic}
-mWorkDuration=13.67 mReadyDuration=12.33 last vsync time -151518.83ms relative to now
+app: state=Idle VSyncState={displayId=4630946694713414275, count=3390230}
+mWorkDuration=13.67 mReadyDuration=15.11 last vsync time 7.92ms relative to now
   pending events (count=0):
-  connections (count=46):
+  connections (count=52):
     Connection{0xb4000078386636c0, 1854, VSyncRequest::None}
     Connection{0xb400007838668f20, 2711, VSyncRequest::None}
     Connection{0xb400007838669000, 2711, VSyncRequest::None}
@@ -115,48 +115,54 @@ mWorkDuration=13.67 mReadyDuration=12.33 last vsync time -151518.83ms relative t
     Connection{0xb4000077441da6c0, 15866, VSyncRequest::None}
     Connection{0xb4000077441da5e0, 17634, VSyncRequest::None}
     Connection{0xb4000077441d82e0, 17634, VSyncRequest::None}
+    Connection{0xb4000077441d3880, 21325, VSyncRequest::None}
+    Connection{0xb4000077441d2fc0, 21569, VSyncRequest::None}
+    Connection{0xb40000783866a960, 21569, VSyncRequest::None}
+    Connection{0xb40000783866cf00, 21569, VSyncRequest::None}
+    Connection{0xb4000077441d36c0, 22713, VSyncRequest::None}
+    Connection{0xb4000078386659c0, 21569, VSyncRequest::None}
   mDynamicAppVsyncEnable=false
 
 VsyncSchedule for pacesetter 4630946694713414275:
-hwVsyncState=Disallowed
+hwVsyncState=Disabled
 pendingHwVsyncState=Disabled
 
 VsyncController:
 VsyncReactor in use
-Has 2 unfired fences
+Has 1 unfired fences
 mInternalIgnoreFences=0 mExternalIgnoreFences=0
 mMoreSamplesNeeded=0 mPeriodConfirmationInProgress=0
 mPeriodTransitioningTo=nullptr
 No Last HW vsync
 VSyncTracker:
-	mIdealPeriod=8.33
+	mIdealPeriod=11.11
 	Refresh Rate Map:
-		For ideal period 11.11ms: period = 11.11ms, intercept = 0
+		For ideal period 11.11ms: period = 11.06ms, intercept = -2371
 		For ideal period 16.67ms: period = 16.67ms, intercept = 0
-		For ideal period 8.33ms: period = 8.27ms, intercept = 5246
+		For ideal period 8.33ms: period = 8.33ms, intercept = 0
 		For ideal period 16.67ms: period = 16.67ms, intercept = 0
 VsyncDispatch:
 	Timer:
 		DebugState: Waiting
 	mTimerSlack: 0.50ms mMinVsyncDistance: 3.00ms
-	mIntendedWakeupTime: 9223281836032.00ms from now
-	mLastTimerCallback: 150646.00ms ago mLastTimerSchedule: 150654.00ms ago
+	mIntendedWakeupTime: 9223280787456.00ms from now
+	mLastTimerCallback: 20.87ms ago mLastTimerSchedule: 29.32ms ago
 	Callbacks:
 		appSf:  
-			workDuration: 8.33ms readyDuration: 12.33ms earliestVsync: -150633.80ms relative to now
-			mLastDispatchTime: 150625.52ms ago
+			workDuration: 11.11ms readyDuration: 15.11ms earliestVsync: -4449.62ms relative to now
+			mLastDispatchTime: 4438.51ms ago
 		sf:  
-			workDuration: 12.33ms readyDuration: 0.00ms earliestVsync: -150650.34ms relative to now
-			mLastDispatchTime: 150642.08ms ago
+			workDuration: 15.11ms readyDuration: 0.00ms earliestVsync: -80.71ms relative to now
+			mLastDispatchTime: 14.35ms ago
 		app:  
-			workDuration: 13.67ms readyDuration: 12.33ms earliestVsync: -151527.38ms relative to now
-			mLastDispatchTime: 151519.09ms ago
+			workDuration: 13.67ms readyDuration: 15.11ms earliestVsync: -3.29ms relative to now
+			mLastDispatchTime: -7.77ms ago
 
-Total missed frame count: 65868
-HWC missed frame count: 61353
-GPU missed frame count: 13265
+Total missed frame count: 66472
+HWC missed frame count: 61936
+GPU missed frame count: 13389
 
-Visible layers (count = 121)
+Visible layers (count = 132)
 Composition layers
 * Layer 0xb400007759e89000 (Display 0 name="内置屏幕"#4)
       isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
@@ -267,9 +273,9 @@ Composition layers
       color=[0.000000 0.000000 0.000000] 
       isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
 * Layer 0xb40000772a7d2000 (Wallpaper BBQ wrapper#819)
-      isSecure=false geomUsesSourceCrop=true geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (SCALE )
-    1.0194  0.0000  0.0000
-    0.0000  1.0194  0.0000
+      isSecure=false geomUsesSourceCrop=true geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (SCALE TRANSLATE)
+    1.2232  0.0000  -126.4000
+    0.0000  1.2233  -278.0001
     0.0000  0.0000  1.0000
 
       geomBufferSize=[0 0 1240 2727] geomContentCrop=[0 0 1240 2727] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
@@ -346,54 +352,6 @@ Composition layers
 
       geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
         Region transparentRegionHint (this=0xb4000077440ef740, count=1)
-    [  0,   0,   0,   0]
-      geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
-      blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
-      buffer: buffer=0x0 
-      sideband stream=0x0 
-      color=[0.000000 0.000000 0.000000] 
-      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
-* Layer 0xb400007759eb6000 (ImeContainer#13)
-      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
-
-      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
-        Region transparentRegionHint (this=0xb400007728e0ed40, count=1)
-    [  0,   0,   0,   0]
-      geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
-      blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
-      buffer: buffer=0x0 
-      sideband stream=0x0 
-      color=[0.000000 0.000000 0.000000] 
-      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
-* Layer 0xb400007728854000 (WindowToken{c142a0a type=2011 android.os.Binder@9f90dac}#111)
-      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
-
-      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
-        Region transparentRegionHint (this=0xb400007744163940, count=1)
-    [  0,   0,   0,   0]
-      geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
-      blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
-      buffer: buffer=0x0 
-      sideband stream=0x0 
-      color=[0.000000 0.000000 0.000000] 
-      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
-* Layer 0xb400007728b69000 (Surface(name=69c3118 InputMethod)/@0x59f50cf - animation-leash of insets_animation#24440)
-      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
-
-      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
-        Region transparentRegionHint (this=0xb400007728987f40, count=1)
-    [  0,   0,   0,   0]
-      geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
-      blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
-      buffer: buffer=0x0 
-      sideband stream=0x0 
-      color=[0.000000 0.000000 0.000000] 
-      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
-* Layer 0xb400007728b50000 (69c3118 InputMethod#128)
-      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
-
-      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
-        Region transparentRegionHint (this=0xb400007728966140, count=1)
     [  0,   0,   0,   0]
       geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
       blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
@@ -496,7 +454,7 @@ Composition layers
     [  0,   0,   0,   0]
       geomLayerBounds=[0.000000 0.000000 1264.000000 1337.000000]       shadowRadius=0.000000 
       blend=PREMULTIPLIED (2) alpha=1.000000 backgroundBlurRadius=0 composition type=DEVICE (2) 
-      buffer: buffer=0xb400007728f2bc00 
+      buffer: buffer=0xb400007838586c00 
       sideband stream=0x0 
       color=[0.000000 0.000000 0.000000] 
       isVisible=[false, -1] forceClientComposition=false clientType=0 isOpaque=false hasProtectedContent=false isColorspaceAgnostic=false dataspace=V0_SRGB (142671872) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
@@ -598,7 +556,7 @@ Composition layers
     [  0,   0,   0,   0]
       geomLayerBounds=[0.000000 0.000000 1264.000000 1422.000000]       shadowRadius=0.000000 
       blend=PREMULTIPLIED (2) alpha=1.000000 backgroundBlurRadius=0 composition type=DEVICE (2) 
-      buffer: buffer=0xb400007728f2b000 
+      buffer: buffer=0xb400007838589100 
       sideband stream=0x0 
       color=[0.000000 0.000000 0.000000] 
       isVisible=[false, -1] forceClientComposition=false clientType=0 isOpaque=false hasProtectedContent=false isColorspaceAgnostic=false dataspace=V0_SRGB (142671872) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
@@ -622,6 +580,168 @@ Composition layers
 
       geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
         Region transparentRegionHint (this=0xb400007728982540, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
+      blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
+      buffer: buffer=0x0 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+* Layer 0xb400007759e7f000 (Task=710#24523)
+      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+
+      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb40000772896e340, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
+      blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
+      buffer: buffer=0x0 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+* Layer 0xb400007728b82000 (8e55b14 ActivityRecordInputSink com.qiyi.video/org.qiyi.android.video.MainActivity#24532)
+      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+
+      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb400007728982f40, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
+      blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
+      buffer: buffer=0x0 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+* Layer 0xb400007759e84000 (ActivityRecord{303f167 u0 com.qiyi.video/.WelcomeActivity t710}#24524)
+      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+
+      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb400007728965740, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
+      blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
+      buffer: buffer=0x0 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+* Layer 0xb40000772888b000 (d26c842 com.qiyi.video/com.qiyi.video.WelcomeActivity#24535)
+      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+
+      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb400007728985740, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
+      blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
+      buffer: buffer=0x0 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+* Layer 0xb40000772a522000 (Background for SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#24577)
+      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (TRANSLATE)
+    1.0000  0.0000  0.0000
+    0.0000  1.0000  438.0000
+    0.0000  0.0000  1.0000
+
+      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb400007728987f40, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 1264.000000 711.000000]       shadowRadius=0.000000 
+      blend=NONE (1) alpha=1.000000 backgroundBlurRadius=0 composition type=SOLID_COLOR (3) 
+      buffer: buffer=0x0 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isVisible=[false, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=V0_SRGB (142671872) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+* Layer 0xb40000772a518000 (SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#24575)
+      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+
+      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb400007728988940, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
+      blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
+      buffer: buffer=0x0 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+* Layer 0xb40000772a51d000 (SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity](BLAST)#24576)
+      isSecure=false geomUsesSourceCrop=true geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (SCALE TRANSLATE)
+    0.9875  0.0000  0.0000
+    0.0000  0.9875  438.0000
+    0.0000  0.0000  1.0000
+
+      geomBufferSize=[0 0 1280 720] geomContentCrop=[0 0 1280 720] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb40000772898bb40, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 1280.000000 720.000000]       shadowRadius=0.000000 
+      blend=NONE (1) alpha=1.000000 backgroundBlurRadius=0 composition type=DEVICE (2) 
+      buffer: buffer=0xb400007728f2a800 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isVisible=[false, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=V0_BT709 (281083904) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+* Layer 0xb400007728b64000 (com.qiyi.video/com.qiyi.video.WelcomeActivity#24573)
+      isSecure=false geomUsesSourceCrop=true geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+
+      geomBufferSize=[0 0 1264 2780] geomContentCrop=[0 0 1264 2780] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb40000774416d940, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 1264.000000 2780.000000]       shadowRadius=0.000000 
+      blend=PREMULTIPLIED (2) alpha=1.000000 backgroundBlurRadius=0 composition type=DEVICE (2) 
+      buffer: buffer=0xb400007728f28e00 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=false hasProtectedContent=false isColorspaceAgnostic=false dataspace=V0_SRGB (142671872) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+* Layer 0xb400007728b78000 (Bounds for - com.qiyi.video/com.qiyi.video.WelcomeActivity#24574)
+      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+
+      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb40000774416cf40, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
+      blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
+      buffer: buffer=0x0 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+* Layer 0xb400007759eb6000 (ImeContainer#13)
+      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+
+      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb400007728e0ed40, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
+      blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
+      buffer: buffer=0x0 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+* Layer 0xb400007728854000 (WindowToken{c142a0a type=2011 android.os.Binder@9f90dac}#111)
+      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+
+      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb400007744163940, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
+      blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
+      buffer: buffer=0x0 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+* Layer 0xb40000772a4fa000 (Surface(name=69c3118 InputMethod)/@0x59f50cf - animation-leash of insets_animation#24595)
+      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+
+      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb400007728967f40, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
+      blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
+      buffer: buffer=0x0 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+* Layer 0xb400007728b50000 (69c3118 InputMethod#128)
+      isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+
+      geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb400007728966140, count=1)
     [  0,   0,   0,   0]
       geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
       blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
@@ -700,10 +820,10 @@ Composition layers
     [  0,   0,   0,   0]
       geomLayerBounds=[0.000000 0.000000 62.000000 336.000000]       shadowRadius=0.000000 
       blend=PREMULTIPLIED (2) alpha=1.000000 backgroundBlurRadius=0 composition type=DEVICE (2) 
-      buffer: buffer=0xb400007838589500 
+      buffer: buffer=0xb400007728f2a500 
       sideband stream=0x0 
       color=[0.000000 0.000000 0.000000] 
-      isVisible=[false, -1] forceClientComposition=false clientType=0 isOpaque=false hasProtectedContent=false isColorspaceAgnostic=false dataspace=V0_SRGB (142671872) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=false hasProtectedContent=false isColorspaceAgnostic=false dataspace=V0_SRGB (142671872) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
 * Layer 0xb40000772891e000 (WindowToken{8690405 type=2314 android.os.BinderProxy@233d37c}#24468)
       isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
 
@@ -788,11 +908,11 @@ Composition layers
       sideband stream=0x0 
       color=[0.000000 0.000000 0.000000] 
       isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
-* Layer 0xb40000772894b000 (Surface(name=6a97a7b StatusBar)/@0x74077d1 - animation-leash of insets_animation#24479)
+* Layer 0xb400007728b5a000 (Surface(name=6a97a7b StatusBar)/@0x74077d1 - animation-leash of insets_animation#24593)
       isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
 
       geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
-        Region transparentRegionHint (this=0xb400007728968940, count=1)
+        Region transparentRegionHint (this=0xb400007728962540, count=1)
     [  0,   0,   0,   0]
       geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
       blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
@@ -820,7 +940,7 @@ Composition layers
     [  0,   0,   0,   0]
       geomLayerBounds=[0.000000 0.000000 1264.000000 140.000000]       shadowRadius=0.000000 
       blend=PREMULTIPLIED (2) alpha=1.000000 backgroundBlurRadius=0 composition type=DEVICE (2) 
-      buffer: buffer=0xb400007728f23000 
+      buffer: buffer=0xb40000783858c400 
       sideband stream=0x0 
       color=[0.000000 0.000000 0.000000] 
       isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=false hasProtectedContent=false isColorspaceAgnostic=false dataspace=V0_SRGB (142671872) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
@@ -944,18 +1064,6 @@ Composition layers
       sideband stream=0x0 
       color=[0.000000 0.000000 0.000000] 
       isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
-* Layer 0xb400007728919000 (NotificationShade#24477)
-      isSecure=false geomUsesSourceCrop=true geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
-
-      geomBufferSize=[0 0 1264 2780] geomContentCrop=[0 0 1264 2780] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
-        Region transparentRegionHint (this=0xb400007728e02540, count=1)
-    [  0,   0,   0,   0]
-      geomLayerBounds=[0.000000 0.000000 1264.000000 2780.000000]       shadowRadius=0.000000 
-      blend=PREMULTIPLIED (2) alpha=1.000000 backgroundBlurRadius=0 composition type=DEVICE (2) 
-      buffer: buffer=0xb400007838581800 
-      sideband stream=0x0 
-      color=[0.000000 0.000000 0.000000] 
-      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=false hasProtectedContent=false isColorspaceAgnostic=false dataspace=V0_SRGB (142671872) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
 * Layer 0xb400007728fdd000 (HideDisplayCutout:18:55#24)
       isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
 
@@ -1028,11 +1136,11 @@ Composition layers
       sideband stream=0x0 
       color=[0.000000 0.000000 0.000000] 
       isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=true hasProtectedContent=false isColorspaceAgnostic=false dataspace=UNKNOWN (0) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
-* Layer 0xb40000772893c000 (Surface(name=ac340da NavigationBar_displayId_0)/@0xaecc6f8 - animation-leash of insets_animation#24478)
+* Layer 0xb400007728b55000 (Surface(name=ac340da NavigationBar_displayId_0)/@0xaecc6f8 - animation-leash of insets_animation#24592)
       isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
 
       geomBufferSize=[0 0 -1 -1] geomContentCrop=[0 0 -1 -1] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
-        Region transparentRegionHint (this=0xb400007728965740, count=1)
+        Region transparentRegionHint (this=0xb400007728e07f40, count=1)
     [  0,   0,   0,   0]
       geomLayerBounds=[0.000000 0.000000 0.000000 0.000000]       shadowRadius=0.000000 
       blend=INVALID (0) alpha=1.000000 backgroundBlurRadius=0 composition type=INVALID (0) 
@@ -1055,7 +1163,7 @@ Composition layers
 * Layer 0xb400007728900000 (NavigationBar_displayId_0#81)
       isSecure=false geomUsesSourceCrop=true geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (TRANSLATE)
     1.0000  0.0000  0.0000
-    0.0000  1.0000  2682.0000
+    0.0000  1.0000  2626.0000
     0.0000  0.0000  1.0000
 
       geomBufferSize=[0 0 1264 154] geomContentCrop=[0 0 1264 154] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
@@ -1063,10 +1171,10 @@ Composition layers
     [  0,   0,   0,   0]
       geomLayerBounds=[0.000000 0.000000 1264.000000 154.000000]       shadowRadius=0.000000 
       blend=PREMULTIPLIED (2) alpha=1.000000 backgroundBlurRadius=0 composition type=DEVICE (2) 
-      buffer: buffer=0xb400007728f2ab00 
+      buffer: buffer=0xb400007728f23700 
       sideband stream=0x0 
       color=[0.000000 0.000000 0.000000] 
-      isVisible=[false, -1] forceClientComposition=false clientType=0 isOpaque=false hasProtectedContent=false isColorspaceAgnostic=false dataspace=V0_SRGB (142671872) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
+      isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=false hasProtectedContent=false isColorspaceAgnostic=false dataspace=V0_SRGB (142671872) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
 * Layer 0xb400007728868000 (WindowToken{c97a96d type=2024 android.os.BinderProxy@2998d84}#72)
       isSecure=false geomUsesSourceCrop=false geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
 
@@ -1147,7 +1255,7 @@ Composition layers
     [  0,   0,   0,   0]
       geomLayerBounds=[0.000000 0.000000 1264.000000 320.000000]       shadowRadius=0.000000 
       blend=PREMULTIPLIED (2) alpha=1.000000 backgroundBlurRadius=0 composition type=DEVICE (2) 
-      buffer: buffer=0xb400007728f28200 
+      buffer: buffer=0xb40000783858ae00 
       sideband stream=0x0 
       color=[0.000000 0.000000 0.000000] 
       isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=false hasProtectedContent=false isColorspaceAgnostic=true dataspace=V0_SRGB (142671872) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
@@ -1186,7 +1294,7 @@ Composition layers
     [  0,   0,   0,   0]
       geomLayerBounds=[0.000000 0.000000 1264.000000 320.000000]       shadowRadius=0.000000 
       blend=PREMULTIPLIED (2) alpha=1.000000 backgroundBlurRadius=0 composition type=DEVICE (2) 
-      buffer: buffer=0xb400007728f26700 
+      buffer: buffer=0xb400007728f26800 
       sideband stream=0x0 
       color=[0.000000 0.000000 0.000000] 
       isVisible=[true, -1] forceClientComposition=false clientType=0 isOpaque=false hasProtectedContent=false isColorspaceAgnostic=true dataspace=V0_SRGB (142671872) hdr metadata types=0 dimming enabled=true colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] caching hint=Enabled 
@@ -1499,14 +1607,14 @@ Display 4630946694713414275
         ColorMode::DISPLAY_P3
     deviceProductInfo={name="", manufacturerPnpId=QCM, productId=1, manufactureWeek=27, manufactureYear=2006, relativeAddress=[]}
     name=""
-    powerMode=Off
-    activeMode=120.00 Hz (120.00 Hz)
+    powerMode=On
+    activeMode=90.00 Hz (90.00 Hz)
     displayModes=
         {id=0, hwcId=0, resolution=1264x2780, refreshRate=120.00 Hz, dpi=452.19x449.76, group=0}
         {id=1, hwcId=1, resolution=1264x2780, refreshRate=60.00 Hz, dpi=452.19x449.76, group=0}
         {id=2, hwcId=2, resolution=1264x2780, refreshRate=90.00 Hz, dpi=452.19x449.76, group=0}
         {id=3, hwcId=3, resolution=1264x2780, refreshRate=120.00 Hz, dpi=452.19x449.76, group=0}
-    displayManagerPolicy={defaultModeId=0, allowGroupSwitching=false, primaryRanges={physical=[0.00 Hz, inf Hz], render=[0.00 Hz, 120.00 Hz]}, appRequestRanges={physical=[0.00 Hz, inf Hz], render=[0.00 Hz, 120.00 Hz]}}
+    displayManagerPolicy={defaultModeId=2, allowGroupSwitching=false, primaryRanges={physical=[0.00 Hz, inf Hz], render=[0.00 Hz, 90.00 Hz]}, appRequestRanges={physical=[0.00 Hz, inf Hz], render=[0.00 Hz, 90.00 Hz]}}
     
     OPlusRefreshRateSelector:
     Version: 2
@@ -1520,12 +1628,12 @@ Display 4630946694713414275
     refresh info: HwcConfigIndex:2 name:90.00 Hz fps:90.000000 period:11111111 id:2 group:0 WxH=1264x2780 DPI.WxH=452.191010x449.756989 type:SA 
     refresh info: HwcConfigIndex:3 name:120.00 Hz fps:120.000008 period:8333333 id:3 group:0 WxH=1264x2780 DPI.WxH=452.191010x449.756989 type:OA 
     Current info: 
-    ConfigId: 0
-    Current Policy: defaultConfig: 0 primaryRange: [0 inf] appRange: [0 inf] 
-    PrimaryRefreshRates: [20.00 Hz (60.00 Hz - modeId 1) 22.50 Hz (90.00 Hz - modeId 2) 24.00 Hz (120.00 Hz - modeId 0) 30.00 Hz (60.00 Hz - modeId 1) 40.00 Hz (120.00 Hz - modeId 0) 45.00 Hz (90.00 Hz - modeId 2) 60.00 Hz (60.00 Hz - modeId 1) 90.00 Hz (90.00 Hz - modeId 2) 120.00 Hz (120.00 Hz - modeId 0)  ]
-    AppRequestRefreshRates: [20.00 Hz (60.00 Hz - modeId 1) 22.50 Hz (90.00 Hz - modeId 2) 24.00 Hz (120.00 Hz - modeId 0) 30.00 Hz (60.00 Hz - modeId 1) 40.00 Hz (120.00 Hz - modeId 0) 45.00 Hz (90.00 Hz - modeId 2) 60.00 Hz (60.00 Hz - modeId 1) 90.00 Hz (90.00 Hz - modeId 2) 120.00 Hz (120.00 Hz - modeId 0)  ]
+    ConfigId: 2
+    Current Policy: defaultConfig: 2 primaryRange: [0 inf] appRange: [0 inf] 
+    PrimaryRefreshRates: [20.00 Hz (60.00 Hz - modeId 1) 22.50 Hz (90.00 Hz - modeId 2) 24.00 Hz (120.00 Hz - modeId 0) 30.00 Hz (60.00 Hz - modeId 1) 40.00 Hz (120.00 Hz - modeId 0) 45.00 Hz (90.00 Hz - modeId 2) 60.00 Hz (60.00 Hz - modeId 1) 90.00 Hz (90.00 Hz - modeId 2)  ]
+    AppRequestRefreshRates: [20.00 Hz (60.00 Hz - modeId 1) 22.50 Hz (90.00 Hz - modeId 2) 24.00 Hz (120.00 Hz - modeId 0) 30.00 Hz (60.00 Hz - modeId 1) 40.00 Hz (120.00 Hz - modeId 0) 45.00 Hz (90.00 Hz - modeId 2) 60.00 Hz (60.00 Hz - modeId 1) 90.00 Hz (90.00 Hz - modeId 2)  ]
     OPlus ADFR Mode:1
-    Auto Mode:0 FakeFrame:1 MinFps:120 IdleFps:-1
+    Auto Mode:0 FakeFrame:1 MinFps:90 IdleFps:-1
     QSync Mode:0 MinFps:0 OsyncTargetFps:-1
     LooperIsReady: true
     PendingModes: 0
@@ -1537,9 +1645,9 @@ Display 4630946694713414275
 
 Display 4630946694713414275 (physical, "")
    Composition Display State:
-   isEnabled=false isSecure=true usesDeviceComposition=true 
+   isEnabled=true isSecure=true usesDeviceComposition=true 
    usesClientComposition=false flipClientTarget=false reusedClientComposition=false 
-   layerFilter={layerStack=4294967295 toInternalDisplay=true }
+   layerFilter={layerStack=0 toInternalDisplay=true }
    transform (ROT_0) (IDENTITY)
    layerStackSpace=ProjectionSpace{bounds=Rect(0, 0, 1264, 2780), content=Rect(0, 0, 1264, 2780), orientation=ROTATION_0} 
    framebufferSpace=ProjectionSpace{bounds=Rect(0, 0, 1264, 2780), content=Rect(0, 0, 1264, 2780), orientation=ROTATION_0} 
@@ -1548,7 +1656,7 @@ Display 4630946694713414275 (physical, "")
    needsFiltering=false 
    colorMode=SRGB (7) renderIntent=COLORIMETRIC (0) dataspace=V0_SRGB (142671872) targetDataspace=V0_SRGB (142671872) 
    colorTransformMatrix=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] 
-   displayBrightnessNits=0.000000 sdrWhitePointNits=0.000000 clientTargetBrightness=1.000000 displayBrightness=nullopt 
+   displayBrightnessNits=1.629607 sdrWhitePointNits=1.629607 clientTargetBrightness=1.000000 displayBrightness=nullopt 
    compositionStrategyPredictionState=DISABLED 
    
    treate170mAsSrgb=true 
@@ -1565,16 +1673,132 @@ Display 4630946694713414275 (physical, "")
       - BufferQueue mMaxAcquiredBufferCount=2 mMaxDequeuedBufferCount=1
         mDequeueBufferCannotBlock=0 mAsyncMode=0
         mQueueBufferCanDrop=0 mLegacyBufferDrop=1
-        default-size=[1264x2780] default-format=1         transform-hint=00 frame-counter=65069
+        default-size=[1264x2780] default-format=1         transform-hint=00 frame-counter=65339
         mTransformHintInUse=00 mAutoPrerotation=0
       FIFO(0):
       (mConsumerName=FramebufferSurface, mConnectedApi=1, mConsumerUsageBits=6656, mId=73e00000000, producer=[1854:/system/bin/surfaceflinger], consumer=[1854:/system/bin/surfaceflinger])
       Slots:
-       >[01:0xb400007838581f00] state=ACQUIRED 0xb400007838484380 frame=65069 [1264x2780:1280,  1]
-        [00:0xb400007838581e00] state=FREE     0xb400007838484800 frame=65067 [1264x2780:1280,  1]
-        [02:0xb400007838582000] state=FREE     0xb400007838484780 frame=65068 [1264x2780:1280,  1]
+       >[01:0xb400007838581f00] state=ACQUIRED 0xb400007838484380 frame=65339 [1264x2780:1280,  1]
+        [00:0xb400007838581e00] state=FREE     0xb400007838484800 frame=65337 [1264x2780:1280,  1]
+        [02:0xb400007838582000] state=FREE     0xb400007838484780 frame=65338 [1264x2780:1280,  1]
 
-   0 Layers
+   6 Layers
+  - Output Layer 0xb4000078385cdc00(com.qiyi.video/com.qiyi.video.WelcomeActivity#24573)
+        Region visibleRegion (this=0xb4000078385cdc20, count=1)
+    [  0,   0, 1264, 2780]
+        Region visibleNonTransparentRegion (this=0xb4000078385cdcf8, count=1)
+    [  0,   0, 1264, 2780]
+        Region coveredRegion (this=0xb4000078385cdd60, count=3)
+    [  0,   0, 1264, 320]
+    [1202, 320, 1264, 615]
+    [  0, 2460, 1264, 2780]
+        Region output visibleRegion (this=0xb4000078385cde38, count=1)
+    [  0,   0, 1264, 2780]
+        Region shadowRegion (this=0xb4000078385cdea0, count=1)
+    [  0,   0,   0,   0]
+        Region outputSpaceBlockingRegionHint (this=0xb4000078385cdf40, count=1)
+    [  0,   0,   0,   0]
+      forceClientComposition=false clientType=0 clearClientTarget=false displayFrame=[0 0 1264 2780] sourceCrop=[0.000000 0.000000 1264.000000 2780.000000] bufferTransform=0 (0) dataspace=V0_SRGB (142671872) whitePointNits=1.629607 dimmingRatio=1.000000 override buffer=0x0 override acquire fence=0x0 override display frame=[0 0 -1 -1] override dataspace=UNKNOWN (0) override display space=ProjectionSpace{bounds=Rect(0, 0, -1, -1), content=Rect(0, 0, -1, -1), orientation=ROTATION_0} override damage region=  Region  (this=0xb4000078385cdff0, count=1)
+    [  0,   0,  -1,  -1]
+ override visible region=  Region  (this=0xb4000078385ce058, count=1)
+    [  0,   0,   0,   0]
+ override peekThroughLayer=0x0 override disableBackgroundBlur=false 
+      hwc: layer=0x081c2a composition=DEVICE (2) 
+  - Output Layer 0xb4000078385cee00(OplusOSEdgeFloatBar#16642)
+        Region visibleRegion (this=0xb4000078385cee20, count=1)
+    [1202, 279, 1264, 615]
+        Region visibleNonTransparentRegion (this=0xb4000078385ceef8, count=1)
+    [1202, 279, 1264, 615]
+        Region coveredRegion (this=0xb4000078385cef60, count=1)
+    [1202, 279, 1264, 320]
+        Region output visibleRegion (this=0xb4000078385cf038, count=1)
+    [1202, 279, 1264, 615]
+        Region shadowRegion (this=0xb4000078385cf0a0, count=1)
+    [  0,   0,   0,   0]
+        Region outputSpaceBlockingRegionHint (this=0xb4000078385cf140, count=1)
+    [  0,   0,   0,   0]
+      forceClientComposition=false clientType=0 clearClientTarget=true displayFrame=[1202 279 1264 615] sourceCrop=[0.000000 0.000000 62.000000 336.000000] bufferTransform=0 (0) dataspace=V0_SRGB (142671872) whitePointNits=1.629607 dimmingRatio=1.000000 override buffer=0x0 override acquire fence=0x0 override display frame=[0 0 -1 -1] override dataspace=UNKNOWN (0) override display space=ProjectionSpace{bounds=Rect(0, 0, -1, -1), content=Rect(0, 0, -1, -1), orientation=ROTATION_0} override damage region=  Region  (this=0xb4000078385cf1f0, count=1)
+    [  0,   0,  -1,  -1]
+ override visible region=  Region  (this=0xb4000078385cf258, count=1)
+    [  0,   0,   0,   0]
+ override peekThroughLayer=0x0 override disableBackgroundBlur=false 
+      hwc: layer=0x081c1a composition=DEVICE (2) 
+  - Output Layer 0xb4000078385cb200(StatusBar#88)
+        Region visibleRegion (this=0xb4000078385cb220, count=1)
+    [  0,   0, 1264, 140]
+        Region visibleNonTransparentRegion (this=0xb4000078385cb2f8, count=1)
+    [  0,   0, 1264, 140]
+        Region coveredRegion (this=0xb4000078385cb360, count=1)
+    [  0,   0, 1264, 140]
+        Region output visibleRegion (this=0xb4000078385cb438, count=1)
+    [  0,   0, 1264, 140]
+        Region shadowRegion (this=0xb4000078385cb4a0, count=1)
+    [  0,   0,   0,   0]
+        Region outputSpaceBlockingRegionHint (this=0xb4000078385cb540, count=1)
+    [  0,   0,   0,   0]
+      forceClientComposition=false clientType=0 clearClientTarget=true displayFrame=[0 0 1264 140] sourceCrop=[0.000000 0.000000 1264.000000 140.000000] bufferTransform=0 (0) dataspace=V0_SRGB (142671872) whitePointNits=1.629607 dimmingRatio=1.000000 override buffer=0x0 override acquire fence=0x0 override display frame=[0 0 -1 -1] override dataspace=UNKNOWN (0) override display space=ProjectionSpace{bounds=Rect(0, 0, -1, -1), content=Rect(0, 0, -1, -1), orientation=ROTATION_0} override damage region=  Region  (this=0xb4000078385cb5f0, count=1)
+    [  0,   0,  -1,  -1]
+ override visible region=  Region  (this=0xb4000078385cb658, count=1)
+    [  0,   0,   0,   0]
+ override peekThroughLayer=0x0 override disableBackgroundBlur=false 
+      hwc: layer=0x081c21 composition=DEVICE (2) 
+  - Output Layer 0xb4000078385cbe00(NavigationBar_displayId_0#81)
+        Region visibleRegion (this=0xb4000078385cbe20, count=1)
+    [  0, 2626, 1264, 2780]
+        Region visibleNonTransparentRegion (this=0xb4000078385cbef8, count=1)
+    [  0, 2626, 1264, 2780]
+        Region coveredRegion (this=0xb4000078385cbf60, count=1)
+    [  0, 2626, 1264, 2780]
+        Region output visibleRegion (this=0xb4000078385cc038, count=1)
+    [  0, 2626, 1264, 2780]
+        Region shadowRegion (this=0xb4000078385cc0a0, count=1)
+    [  0,   0,   0,   0]
+        Region outputSpaceBlockingRegionHint (this=0xb4000078385cc140, count=1)
+    [  0,   0,   0,   0]
+      forceClientComposition=false clientType=0 clearClientTarget=true displayFrame=[0 2626 1264 2780] sourceCrop=[0.000000 0.000000 1264.000000 154.000000] bufferTransform=0 (0) dataspace=V0_SRGB (142671872) whitePointNits=1.629607 dimmingRatio=1.000000 override buffer=0x0 override acquire fence=0x0 override display frame=[0 0 -1 -1] override dataspace=UNKNOWN (0) override display space=ProjectionSpace{bounds=Rect(0, 0, -1, -1), content=Rect(0, 0, -1, -1), orientation=ROTATION_0} override damage region=  Region  (this=0xb4000078385cc1f0, count=1)
+    [  0,   0,  -1,  -1]
+ override visible region=  Region  (this=0xb4000078385cc258, count=1)
+    [  0,   0,   0,   0]
+ override peekThroughLayer=0x0 override disableBackgroundBlur=false 
+      hwc: layer=0x081c22 composition=DEVICE (2) 
+  - Output Layer 0xb4000078385cd000(ScreenDecorOverlay#62)
+        Region visibleRegion (this=0xb4000078385cd020, count=1)
+    [  0,   0, 1264, 320]
+        Region visibleNonTransparentRegion (this=0xb4000078385cd0f8, count=1)
+    [  0,   0, 1264, 320]
+        Region coveredRegion (this=0xb4000078385cd160, count=1)
+    [  0,   0,   0,   0]
+        Region output visibleRegion (this=0xb4000078385cd238, count=1)
+    [  0,   0, 1264, 320]
+        Region shadowRegion (this=0xb4000078385cd2a0, count=1)
+    [  0,   0,   0,   0]
+        Region outputSpaceBlockingRegionHint (this=0xb4000078385cd340, count=1)
+    [  0,   0,   0,   0]
+      forceClientComposition=false clientType=0 clearClientTarget=true displayFrame=[0 0 1264 320] sourceCrop=[0.000000 0.000000 1264.000000 320.000000] bufferTransform=0 (0) dataspace=V0_SRGB (142671872) whitePointNits=1.629607 dimmingRatio=1.000000 override buffer=0x0 override acquire fence=0x0 override display frame=[0 0 -1 -1] override dataspace=UNKNOWN (0) override display space=ProjectionSpace{bounds=Rect(0, 0, -1, -1), content=Rect(0, 0, -1, -1), orientation=ROTATION_0} override damage region=  Region  (this=0xb4000078385cd3f0, count=1)
+    [  0,   0,  -1,  -1]
+ override visible region=  Region  (this=0xb4000078385cd458, count=1)
+    [  0,   0,   0,   0]
+ override peekThroughLayer=0x0 override disableBackgroundBlur=false 
+      hwc: layer=0x081c15 composition=DEVICE (2) 
+  - Output Layer 0xb4000078385cb800(ScreenDecorOverlayBottom#66)
+        Region visibleRegion (this=0xb4000078385cb820, count=1)
+    [  0, 2460, 1264, 2780]
+        Region visibleNonTransparentRegion (this=0xb4000078385cb8f8, count=1)
+    [  0, 2460, 1264, 2780]
+        Region coveredRegion (this=0xb4000078385cb960, count=1)
+    [  0,   0,   0,   0]
+        Region output visibleRegion (this=0xb4000078385cba38, count=1)
+    [  0, 2460, 1264, 2780]
+        Region shadowRegion (this=0xb4000078385cbaa0, count=1)
+    [  0,   0,   0,   0]
+        Region outputSpaceBlockingRegionHint (this=0xb4000078385cbb40, count=1)
+    [  0,   0,   0,   0]
+      forceClientComposition=false clientType=0 clearClientTarget=true displayFrame=[0 2460 1264 2780] sourceCrop=[0.000000 0.000000 1264.000000 320.000000] bufferTransform=0 (0) dataspace=V0_SRGB (142671872) whitePointNits=1.629607 dimmingRatio=1.000000 override buffer=0x0 override acquire fence=0x0 override display frame=[0 0 -1 -1] override dataspace=UNKNOWN (0) override display space=ProjectionSpace{bounds=Rect(0, 0, -1, -1), content=Rect(0, 0, -1, -1), orientation=ROTATION_0} override damage region=  Region  (this=0xb4000078385cbbf0, count=1)
+    [  0,   0,  -1,  -1]
+ override visible region=  Region  (this=0xb4000078385cbc58, count=1)
+    [  0,   0,   0,   0]
+ override peekThroughLayer=0x0 override disableBackgroundBlur=false 
+      hwc: layer=0x081c14 composition=DEVICE (2) 
 
 
 SurfaceFlinger global state:
@@ -1625,13 +1849,34 @@ Skia's Wrapped Objects:
     skia/gpu_resources/resource_152/texture_renderbuffer: size[13.40 MB]
     skia/gpu_resources/resource_161/texture_renderbuffer: size[13.40 MB]
     skia/gpu_resources/resource_140/texture_renderbuffer: size[13.40 MB]
-RenderEngine tracked buffers: 36
+RenderEngine tracked buffers: 60
 Dumping buffer ids...
-- 0x109f0000388b - 1 refs 
-- 0x109f0000388c - 1 refs 
-- 0x109f0000388d - 1 refs 
-- 0x109f0000388e - 1 refs 
-- 0x109f0000388f - 1 refs 
+- 0x54410000003d - 1 refs 
+- 0x544100000042 - 1 refs 
+- 0x54410000003e - 1 refs 
+- 0x544100000041 - 1 refs 
+- 0x54410000003f - 1 refs 
+- 0x544100000040 - 1 refs 
+- 0x54410000003b - 1 refs 
+- 0x54410000003c - 1 refs 
+- 0x544100000038 - 1 refs 
+- 0x54410000003a - 1 refs 
+- 0x544100000048 - 1 refs 
+- 0x544100000035 - 1 refs 
+- 0x544100000037 - 1 refs 
+- 0x544100000036 - 1 refs 
+- 0x544100000039 - 1 refs 
+- 0x54410000002d - 1 refs 
+- 0x544100000034 - 1 refs 
+- 0x544100000032 - 1 refs 
+- 0x544100000033 - 1 refs 
+- 0x544100000031 - 1 refs 
+- 0x54410000002f - 1 refs 
+- 0x544100000030 - 1 refs 
+- 0x54410000002c - 1 refs 
+- 0x54410000002e - 1 refs 
+- 0x54410000002b - 1 refs 
+- 0x544100000027 - 1 refs 
 - 0x22a7000000b9 - 1 refs 
 - 0x109f0000384f - 1 refs 
 - 0x109f0000384e - 1 refs 
@@ -1649,6 +1894,7 @@ Dumping buffer ids...
 - 0x109f00003852 - 1 refs 
 - 0x109f00001ca9 - 1 refs 
 - 0x109f00001caf - 1 refs 
+- 0x544100000020 - 1 refs 
 - 0x109f00003853 - 1 refs 
 - 0x109f00001caa - 1 refs 
 - 0x109f00001cb0 - 1 refs 
@@ -1656,20 +1902,43 @@ Dumping buffer ids...
 - 0x109f00003851 - 1 refs 
 - 0x109f00001ca8 - 1 refs 
 - 0x73e000055d7 - 1 refs 
+- 0x54410000002a - 1 refs 
 - 0x109f000001cd - 1 refs 
 - 0x109f00001cac - 1 refs 
 - 0x73e00000001 - 1 refs 
+- 0x544100000021 - 1 refs 
 - 0x109f00001cab - 1 refs 
 - 0x73e00000000 - 1 refs 
 - 0x109f00001cad - 1 refs 
 - 0x73e00000002 - 1 refs 
-RenderEngine AHB/BackendTexture cache size: 36
+RenderEngine AHB/BackendTexture cache size: 60
 Dumping buffer ids...
-- 0x109f0000388b
-- 0x109f0000388c
-- 0x109f0000388d
-- 0x109f0000388e
-- 0x109f0000388f
+- 0x54410000003d
+- 0x544100000042
+- 0x54410000003e
+- 0x544100000041
+- 0x54410000003f
+- 0x544100000040
+- 0x54410000003b
+- 0x54410000003c
+- 0x544100000038
+- 0x54410000003a
+- 0x544100000048
+- 0x544100000035
+- 0x544100000037
+- 0x544100000036
+- 0x544100000039
+- 0x54410000002d
+- 0x544100000034
+- 0x544100000032
+- 0x544100000033
+- 0x544100000031
+- 0x54410000002f
+- 0x544100000030
+- 0x54410000002c
+- 0x54410000002e
+- 0x54410000002b
+- 0x544100000027
 - 0x22a7000000b9
 - 0x109f0000384f
 - 0x109f0000384e
@@ -1687,6 +1956,7 @@ Dumping buffer ids...
 - 0x109f00003852
 - 0x109f00001ca9
 - 0x109f00001caf
+- 0x544100000020
 - 0x109f00003853
 - 0x109f00001caa
 - 0x109f00001cb0
@@ -1694,9 +1964,11 @@ Dumping buffer ids...
 - 0x109f00003851
 - 0x109f00001ca8
 - 0x73e000055d7
+- 0x54410000002a
 - 0x109f000001cd
 - 0x109f00001cac
 - 0x73e00000001
+- 0x544100000021
 - 0x109f00001cab
 - 0x73e00000000
 - 0x109f00001cad
@@ -1711,12 +1983,37 @@ ClientCache state:
  Cache owner: 0xb4000077440b0240
  Cache owner: 0xb4000077440b29a0
  Cache owner: 0xb4000077440b47a0
+ Cache owner: 0xb4000077440bace0
+	ID: 92638149607485, size: 1280x720
+	ID: 92638149607490, size: 1280x720
+	ID: 92638149607486, size: 1280x720
+	ID: 92638149607489, size: 1280x720
+	ID: 92638149607487, size: 1280x720
+	ID: 92638149607488, size: 1280x720
+	ID: 92638149607483, size: 1280x720
+	ID: 92638149607467, size: 1280x720
+	ID: 92638149607484, size: 1280x720
+	ID: 92638149607480, size: 1280x720
+	ID: 92638149607482, size: 1280x720
+	ID: 92638149607496, size: 1264x2780
+	ID: 92638149607477, size: 1280x720
+	ID: 92638149607479, size: 1280x720
+	ID: 92638149607478, size: 1280x720
+	ID: 92638149607481, size: 1280x720
+	ID: 92638149607469, size: 1280x720
+	ID: 92638149607476, size: 1280x720
+	ID: 92638149607474, size: 1280x720
+	ID: 92638149607475, size: 1280x720
+	ID: 92638149607470, size: 1280x720
+	ID: 92638149607473, size: 1280x720
+	ID: 92638149607471, size: 1280x720
+	ID: 92638149607472, size: 1280x720
+	ID: 92638149607466, size: 1280x720
+	ID: 92638149607468, size: 1264x2780
+	ID: 92638149607463, size: 1264x2780
+	ID: 92638149607457, size: 1264x2780
+	ID: 92638149607456, size: 1264x2780
  Cache owner: 0xb4000077440bcc20
-	ID: 18275085858955, size: 1264x2780
-	ID: 18275085858956, size: 1264x2780
-	ID: 18275085858957, size: 1264x2780
-	ID: 18275085858958, size: 1264x2780
-	ID: 18275085858959, size: 1264x2780
 	ID: 18275085858895, size: 1264x140
 	ID: 18275085858894, size: 1264x140
 	ID: 18275085858893, size: 1264x154
@@ -1750,9 +2047,9 @@ ClientCache state:
  Cache owner: 0xb40000783857ca40
   Region undefinedRegion (this=0xb400007759ff5d28, count=1)
     [  0,   0, 1264, 2780]
-  orientation=ROTATION_0, isPoweredOn=0
+  orientation=ROTATION_0, isPoweredOn=1
   transaction-flags         : 00000000
-  refresh-rate              : 120.00 Hz
+  refresh-rate              : 90.00 Hz
   x-dpi                     : 452.19
   y-dpi                     : 449.76
   transaction time: 0.000000 us
@@ -1768,6 +2065,30 @@ Display 4630946694713414275 (active) HWC layers:
  Layer name
            Z |  Window Type |  Layer Class | Comp Type |  Transform |   Disp Frame (LTRB) |          Source Crop (LTRB) |     Frame Rate (Explicit) (Seamlessness) [Focused]
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ com.qiyi.video/com.qiyi.video.WelcomeActivity#24573
+(s:24573 p:21569 d:0)
+  rel      0 |            1 |            0 |     DEVICE |          0 |    0    0 1264 2780 |    0.0    0.0 1264.0 2780.0 |                                              [*]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ OplusOSEdgeFloatBar#16642
+(s:16642 p:8871 d:0)
+  rel      0 |         2314 |            0 |     DEVICE |          0 | 1202  279 1264  615 |    0.0    0.0   62.0  336.0 |                                              [ ]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ StatusBar#88
+(s:88 p:4255 d:0)
+  rel      0 |         2000 |            0 |     DEVICE |          0 |    0    0 1264  140 |    0.0    0.0 1264.0  140.0 |                                              [ ]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ NavigationBar_displayId_0#81
+(s:81 p:4255 d:0)
+  rel      0 |         2019 |            0 |     DEVICE |          0 |    0 2626 1264 2780 |    0.0    0.0 1264.0  154.0 |                                              [ ]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ScreenDecorOverlay#62
+(s:62 p:4255 d:0)
+  rel      0 |         2024 |            0 |     DEVICE |          0 |    0    0 1264  320 |    0.0    0.0 1264.0  320.0 |                                              [ ]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ScreenDecorOverlayBottom#66
+(s:66 p:4255 d:0)
+  rel      0 |         2024 |            0 |     DEVICE |          0 |    0 2460 1264 2780 |    0.0    0.0 1264.0  320.0 |                                              [ ]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Planner is disabled
 h/w composer state:
@@ -1776,14 +2097,75 @@ h/w composer state:
 ------------HWC----------------
 HWC3 display_id: 0
 support_fod_color_feature:0
+layer: 7210 name:                                                              VRI[WelcomeActivity]#4(BLAST Consumer)4 z: 0 composition: DEVICE/DEVICE alpha: 255 format:         RGBA_8888_UBWC dataspace:0x08810000 transform: 0/0/0 buffer_id: 0xb400007e6b484500 secure: 0
+layer: 7194 name:                                                          VRI[OplusOSEdgeFloatBar]#5(BLAST Consumer)5 z: 1 composition: DEVICE/DEVICE alpha: 255 format:         RGBA_8888_UBWC dataspace:0x08810000 transform: 0/0/0 buffer_id: 0xb400007e6b48c580 secure: 0
+layer: 7201 name:                                                                    VRI[StatusBar]#5(BLAST Consumer)5 z: 2 composition: DEVICE/DEVICE alpha: 255 format:         RGBA_8888_UBWC dataspace:0x08810000 transform: 0/0/0 buffer_id: 0xb400007e6b48b080 secure: 0
+layer: 7202 name:                                                    VRI[NavigationBar_displayId_0]#2(BLAST Consumer)2 z: 3 composition: DEVICE/DEVICE alpha: 255 format:         RGBA_8888_UBWC dataspace:0x08810000 transform: 0/0/0 buffer_id: 0xb400007e6b48b000 secure: 0
+layer: 7189 name:                                                           VRI[ScreenDecorOverlay]#0(BLAST Consumer)0 z: 4 composition: DEVICE/DEVICE alpha: 255 format:              RGBA_8888 dataspace:0x08810000 transform: 0/0/0 buffer_id: 0xb400007e6b488f00 secure: 0
+layer: 7188 name:                                                     VRI[ScreenDecorOverlayBottom]#1(BLAST Consumer)1 z: 5 composition: DEVICE/DEVICE alpha: 255 format:              RGBA_8888 dataspace:0x08810000 transform: 0/0/0 buffer_id: 0xb400007e6b485180 secure: 0
 
- Layers added or removed but not reflected to SDM's layer stack yet
+----------Color Modes---------
+color modes supported: 
+mode: 0 RIs { 0 } 
+mode: 7 RIs { 0 256 257 258 259 260 261 262 263 264 265 300 301 303 305 307 } 
+mode: 9 RIs { 0 256 257 302 304 306 308 310 } 
+current mode: 7
+current render_intent: 0
+current dynamic_range: SDR
+current transform: 
+  1.00   0.00   0.00   0.00 
+  0.00   1.00   0.00   0.00 
+  0.00   0.00   1.00   0.00 
+  0.00   0.00   0.00   1.00 
+
+------------SDM----------------
+device type:0 DrawMethod: 2
+state: 1 vsync on: 0 max. mixer stages: 11
+num configs: 4 active config index: 2
+needs_avr_update: 0 qsync mode: 0 minf fps: 0xc081da
+current brightness: 8
+resolution switch: 0 x_pixels_cached_: 0 y_pixels_cached_: 0
+
+Display Attributes:
+ Mode:Command Primary:true DynFPS:false
+ HDR Panel:true QSync:true DynBitclk:false
+ Left Split:632 Right Split:632
+ PartialUpdate:false
+ FPS min:90 max:90 cur:90 TransferTime: 6290us Min TransferTime: 6290us Max TransferTime: 0us AllowedModeSwitch: 15 PanelModeCaps: 0x2 MaxBrightness:4094
+ Display WxH: 1264x2780 MixerWxH: 1264x2780 DPI: 452.192x449.758 LM_Split: true
+ vsync_period 11111111 v_back_porch: 58 v_front_porch: 42 v_pulse_width: 2
+ v_total: 2882 h_total: 1318 clk: 341862 Topology: 7 Qsync mode: 0
+Current Color Mode: gamut 1 gamma 1 intent 1 Dynamice_range SDR
+ROI(LTRB)#0 LEFT(0 0 1264 2780)
+
+|-----|---------------|-----------|------|-------------|--------------------------|---------------------|---------------------|----|------------|-----------|----|-----|----|
+| Idx |   Comp Type   |   Split   | Pipe |    W x H    |          Format          |  Src Rect (L T R B) |  Dst Rect (L T R B) |  Z | Pipe Flags | Deci(HxV) | CS | Rng | Tr |
+|-----|---------------|-----------|------|-------------|--------------------------|---------------------|---------------------|----|------------|-----------|----|-----|----|
+|   0 |           SDE |    Pipe-1 |  141 | 1280 x 2784 |           RGBA_8888_UBWC |    0    0  632 2780 |    0    0  632 2780 |  0 | 0x00000006 |   0 x   0 |  1 |   1 |  1 |
+|     |               |    Pipe-2 |  162 | 1280 x 2784 |           RGBA_8888_UBWC |  632    0 1264 2780 |  632    0 1264 2780 |  0 | 0x00000007 |   0 x   0 |  1 |   1 |  1 |
+|   1 |           SDE |    Pipe-1 |  137 |   64 x  336 |           RGBA_8888_UBWC |    0    0   62  336 | 1202  279 1264  615 |  1 | 0x00000000 |   0 x   0 |  1 |   1 |  1 |
+|   2 |           SDE |    Pipe-1 |  133 | 1280 x  144 |           RGBA_8888_UBWC |    0    0  632  140 |    0    0  632  140 |  2 | 0x00000006 |   0 x   0 |  1 |   1 |  1 |
+|     |               |    Pipe-2 |  154 | 1280 x  144 |           RGBA_8888_UBWC |  632    0 1264  140 |  632    0 1264  140 |  2 | 0x00000006 |   0 x   0 |  1 |   1 |  1 |
+|   3 |           SDE |    Pipe-1 |  129 | 1280 x  160 |           RGBA_8888_UBWC |    0    0  632  154 |    0 2626  632 2780 |  3 | 0x00000006 |   0 x   0 |  1 |   1 |  1 |
+|     |               |    Pipe-2 |  150 | 1280 x  160 |           RGBA_8888_UBWC |  632    0 1264  154 |  632 2626 1264 2780 |  3 | 0x00000006 |   0 x   0 |  1 |   1 |  1 |
+|   4 |           SDE |    Pipe-1 |  125 | 1280 x  320 |                RGBA_8888 |    0    0  632  320 |    0    0  632  320 |  4 | 0x00000006 |   0 x   0 |  1 |   1 |  1 |
+|     |               |    Pipe-2 |  145 | 1280 x  320 |                RGBA_8888 |  632    0 1264  320 |  632    0 1264  320 |  4 | 0x00000006 |   0 x   0 |  1 |   1 |  1 |
+|   5 |           SDE |    Pipe-1 |  121 | 1280 x  320 |                RGBA_8888 |    0    0  632  320 |    0 2460  632 2780 |  5 | 0x00000006 |   0 x   0 |  1 |   1 |  1 |
+|     |               |    Pipe-2 |  170 | 1280 x  320 |                RGBA_8888 |  632    0 1264  320 |  632 2460 1264 2780 |  5 | 0x00000006 |   0 x   0 |  1 |   1 |  1 |
+|-----|---------------|-----------|------|-------------|--------------------------|---------------------|---------------------|----|------------|-----------|----|-----|----|
+
+------------APOLLO------------
+Vsync period: 11111111
+Debug enabled: 0
+Size of BacklightAlignQueue 0
+TE delay 1
+
 Color Sampling, dark (0.0) to light (1.0): sampled frames: 0
 	no color statistics collected
 
 ------------Active Fences Info---------
 ---------------------------------------
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               GraphicBufferAllocator buffers:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     GraphicBufferAllocator buffers:
     Handle |        Size |     W (Stride) x H | Layers |   Format |      Usage | Requestor
 0xb400007759b22a80 |  280.00 KiB | 1264 (1280) x   56 |      1 |        1 | 0x     303 | RegionSamplingThread
 0xb400007838484380 | 13900.00 KiB | 1264 (1280) x 2780 |      1 |        1 | 0x    1b00 | FramebufferSurface
@@ -1791,13 +2173,96 @@ Color Sampling, dark (0.0) to light (1.0): sampled frames: 0
 0xb400007838484800 | 13900.00 KiB | 1264 (1280) x 2780 |      1 |        1 | 0x    1b00 | FramebufferSurface
 Total allocated by GraphicBufferAllocator (estimate): 41980.00 KB
 Imported gralloc buffers:
-+ name:VRI[NotificationShade]#2248(BLAST Consumer)2248, id:43049, size:14008.00KiB, w/h:1264x2780, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43335, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43340, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43336, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43339, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43337, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43338, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43333, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43334, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43330, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:VRI[WelcomeActivity]#4(BLAST Consumer)4, id:43346, size:14008.00KiB, w/h:1264x2780, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x2780, stride:5120 bytes, size:14344192
-+ name:VRI[NotificationShade]#2248(BLAST Consumer)2248, id:43050, size:14008.00KiB, w/h:1264x2780, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43327, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43329, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43319, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43326, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43324, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43325, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43320, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:VRI[WelcomeActivity]#4(BLAST Consumer)4, id:43318, size:14008.00KiB, w/h:1264x2780, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x2780, stride:5120 bytes, size:14344192
-+ name:VRI[NotificationShade]#2248(BLAST Consumer)2248, id:43051, size:14008.00KiB, w/h:1264x2780, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
-	planes: R/G/B/A:	 w/h:1264x2780, stride:5120 bytes, size:14344192
-+ name:VRI[NotificationShade]#2248(BLAST Consumer)2248, id:43052, size:14008.00KiB, w/h:1264x2780, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43323, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:VRI[WelcomeActivity]#4(BLAST Consumer)4, id:43306, size:14008.00KiB, w/h:1264x2780, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x2780, stride:5120 bytes, size:14344192
 + name:VRI[StatusBar]#5(BLAST Consumer)5, id:42838, size:728.00KiB, w/h:1264x140, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x140, stride:5120 bytes, size:745472
@@ -1813,14 +2278,17 @@ Imported gralloc buffers:
 	planes: R/G/B/A:	 w/h:1264x154, stride:5120 bytes, size:827392
 + name:VRI[StatusBar]#5(BLAST Consumer)5, id:42797, size:728.00KiB, w/h:1264x140, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x140, stride:5120 bytes, size:745472
-+ name:VRI[NotificationShade]#2248(BLAST Consumer)2248, id:43048, size:14008.00KiB, w/h:1264x2780, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
-	planes: R/G/B/A:	 w/h:1264x2780, stride:5120 bytes, size:14344192
 + name:VRI[ScreenDecorOverlayBottom]#1(BLAST Consumer)1, id:42793, size:1600.00KiB, w/h:1264x320, usage: 0x10000922, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: false
 	planes: R/G/B/A:	 w/h:1264x320, stride:5120 bytes, size:1638400
 + name:VRI[ScreenDecorOverlay]#0(BLAST Consumer)0, id:42792, size:1600.00KiB, w/h:1264x320, usage: 0x10000922, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: false
 	planes: R/G/B/A:	 w/h:1264x320, stride:5120 bytes, size:1638400
 + name:VRI[OplusOSEdgeFloatBar]#5(BLAST Consumer)5, id:42789, size:92.00KiB, w/h:62x336, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:62x336, stride:256 bytes, size:94208
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43316, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
 + name:VRI[StatusBar]#5(BLAST Consumer)5, id:42795, size:728.00KiB, w/h:1264x140, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x140, stride:5120 bytes, size:745472
 + name:VRI[NavigationBar_displayId_0]#2(BLAST Consumer)2, id:42794, size:808.00KiB, w/h:1264x154, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
@@ -1833,26 +2301,60 @@ Imported gralloc buffers:
 	planes: R/G/B/A:	 w/h:1264x1422, stride:5120 bytes, size:7340032
 + name:VRI[SplitDecorManager]#1007(BLAST Consumer)1007, id:28644, size:6764.00KiB, w/h:1264x1337, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x1337, stride:5120 bytes, size:6926336
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43322, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
 + name:VRI[SplitDecorManager]#1007(BLAST Consumer)1007, id:28645, size:6764.00KiB, w/h:1264x1337, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x1337, stride:5120 bytes, size:6926336
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43321, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
 + name:VRI[SplitDecorManager]#1007(BLAST Consumer)1007, id:28643, size:6764.00KiB, w/h:1264x1337, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x1337, stride:5120 bytes, size:6926336
 + name:VRI[SplitDecorManager]#1008(BLAST Consumer)1008, id:28652, size:7168.00KiB, w/h:1264x1422, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x1422, stride:5120 bytes, size:7340032
 + name:VRI[SplitDecorManager]#1008(BLAST Consumer)1008, id:28650, size:7168.00KiB, w/h:1264x1422, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x1422, stride:5120 bytes, size:7340032
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43331, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
 + name:VRI[SplitDecorManager]#1008(BLAST Consumer)1008, id:28649, size:7168.00KiB, w/h:1264x1422, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x1422, stride:5120 bytes, size:7340032
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43328, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
 + name:VRI[SplitDecorManager]#1007(BLAST Consumer)1007, id:28642, size:6764.00KiB, w/h:1264x1337, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x1337, stride:5120 bytes, size:6926336
 + name:VRI[SplitDecorManager]#1008(BLAST Consumer)1008, id:28647, size:7168.00KiB, w/h:1264x1422, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x1422, stride:5120 bytes, size:7340032
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43332, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
 + name:VRI[NavigationBar_displayId_0]#2(BLAST Consumer)2, id:42796, size:808.00KiB, w/h:1264x154, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x154, stride:5120 bytes, size:827392
 + name:VRI[SplitDecorManager]#1007(BLAST Consumer)1007, id:28646, size:6764.00KiB, w/h:1264x1337, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x1337, stride:5120 bytes, size:6926336
 + name:Wallpaper#79(BLAST Consumer)79, id:1229, size:13768.00KiB, w/h:1240x2727, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1240x2727, stride:5120 bytes, size:14098432
++ name:SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#5(BLAST Consumer)5, id:43317, size:1456.00KiB, w/h:1280x720, usage: 0x10000030400b00, req fmt:2141391878, fourcc/mod:842094158/360287970189639681, dataspace: 0x10c10000, compressed: true
+	planes:  w/h:1280x720, stride:1280 bytes, size:942080
+	         w/h:640x360, stride:1280 bytes, size:491520
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:8192
+	        QTI#20004:	 w/h:1280x720, stride:64 bytes, size:4096
++ name:VRI[WelcomeActivity]#4(BLAST Consumer)4, id:43313, size:14008.00KiB, w/h:1264x2780, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
+	planes: R/G/B/A:	 w/h:1264x2780, stride:5120 bytes, size:14344192
++ name:VRI[WelcomeActivity]#4(BLAST Consumer)4, id:43307, size:14008.00KiB, w/h:1264x2780, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
+	planes: R/G/B/A:	 w/h:1264x2780, stride:5120 bytes, size:14344192
 + name:VRI[StatusBar]#5(BLAST Consumer)5, id:42800, size:728.00KiB, w/h:1264x140, usage: 0x10000900, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x140, stride:5120 bytes, size:745472
 + name:FramebufferSurface, id:1, size:14008.00KiB, w/h:1264x2780, usage: 0x1b00, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
@@ -1863,7 +2365,7 @@ Imported gralloc buffers:
 	planes: R/G/B/A:	 w/h:62x336, stride:256 bytes, size:94208
 + name:FramebufferSurface, id:2, size:14008.00KiB, w/h:1264x2780, usage: 0x1b00, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1264x2780, stride:5120 bytes, size:14344192
-Total imported by gralloc: 210036.00KiB
+Total imported by gralloc: 244980.00KiB
 FlagManager values: 
 demo_flag: -1
 use_adpf_cpu_hint: false
@@ -1937,7 +2439,7 @@ Window Infos:
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
   Region SurfaceDamageRegion (this=0 count=0)
-      layerStack=   0, z=        0, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[1.02, 0.00][0.00, 1.02]
+      layerStack=   0, z=        0, pos=(-126.4,-278), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[1.22, 0.00][0.00, 1.22]
       parent=WallpaperWindowToken{9245df6 token=android.os.Binder@4d78a91}#816
       zOrderRelativeOf=none
       activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
@@ -1945,15 +2447,15 @@ Window Infos:
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
   Region SurfaceDamageRegion (this=0 count=0)
-      layerStack=   0, z=        0, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,0.980), flags=0x00000001, tr=[1.02, 0.00][0.00, 1.02]
+      layerStack=   0, z=        0, pos=(-126.4,-278), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,0.980), flags=0x00000001, tr=[1.22, 0.00][0.00, 1.22]
       parent=535ce com.android.systemui.wallpapers.ImageWallpaper#817
       zOrderRelativeOf=none
-      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={windowType:2013, ownerUID:10207, ownerPID:4255, 9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={windowType:2013, 9:4bytes, ownerUID:10207, ownerPID:4255}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (Wallpaper BBQ wrapper#819) uid=10207
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
   Region SurfaceDamageRegion (this=0 count=0)
-      layerStack=   0, z=        0, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,0.980), flags=0x00000100, tr=[1.02, 0.00][0.00, 1.02]
+      layerStack=   0, z=        0, pos=(-126.4,-278), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,0.980), flags=0x00000100, tr=[1.22, 0.00][0.00, 1.22]
       parent=com.android.systemui.wallpapers.ImageWallpaper#818
       zOrderRelativeOf=none
       activeBuffer=[1240x2727:268437760,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes, dequeueTime:20187541429432, 10:8bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
@@ -1972,7 +2474,7 @@ Window Infos:
       layerStack=   0, z=        0, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
       parent=DefaultTaskDisplayArea#10
       zOrderRelativeOf=none
-      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={taskId:1, 9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes, taskId:1}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (Task=2#48) uid=1000
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
@@ -2005,38 +2507,6 @@ Window Infos:
       parent=ActivityRecord{3855f04 u0 com.android.launcher/.Launcher t2}#49
       zOrderRelativeOf=none
       activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
-+ Layer (ImeContainer#13) uid=1000
-  Region TransparentRegion (this=0 count=0)
-  Region VisibleRegion (this=0 count=0)
-  Region SurfaceDamageRegion (this=0 count=0)
-      layerStack=   0, z=        1, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
-      parent=ActivityRecord{3855f04 u0 com.android.launcher/.Launcher t2}#49
-      zOrderRelativeOf=ActivityRecord{3855f04 u0 com.android.launcher/.Launcher t2}#49
-      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
-+ Layer (WindowToken{c142a0a type=2011 android.os.Binder@9f90dac}#111) uid=1000
-  Region TransparentRegion (this=0 count=0)
-  Region VisibleRegion (this=0 count=0)
-  Region SurfaceDamageRegion (this=0 count=0)
-      layerStack=   0, z=        0, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
-      parent=ImeContainer#13
-      zOrderRelativeOf=none
-      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
-+ Layer (Surface(name=69c3118 InputMethod)/@0x59f50cf - animation-leash of insets_animation#24440) uid=1000
-  Region TransparentRegion (this=0 count=0)
-  Region VisibleRegion (this=0 count=0)
-  Region SurfaceDamageRegion (this=0 count=0)
-      layerStack=   0, z=        0, pos=(0,140), size=(   0,   0), crop=[  0,   0,   0,   0], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,0.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
-      parent=WindowToken{c142a0a type=2011 android.os.Binder@9f90dac}#111
-      zOrderRelativeOf=none
-      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
-+ Layer (69c3118 InputMethod#128) uid=1000
-  Region TransparentRegion (this=0 count=0)
-  Region VisibleRegion (this=0 count=0)
-  Region SurfaceDamageRegion (this=0 count=0)
-      layerStack=   0, z=        0, pos=(0,140), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,0.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
-      parent=Surface(name=69c3118 InputMethod)/@0x59f50cf - animation-leash of insets_animation#24440
-      zOrderRelativeOf=none
-      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (Task=3#51) uid=1000
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
@@ -2044,7 +2514,7 @@ Window Infos:
       layerStack=   0, z=        1, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
       parent=DefaultTaskDisplayArea#10
       zOrderRelativeOf=none
-      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={taskId:3, 9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes, taskId:3}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (Task=4#52) uid=1000
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
@@ -2100,7 +2570,7 @@ Window Infos:
       layerStack=   0, z=        0, pos=(0,1443), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000100, tr=[0.00, 0.00][0.00, 0.00]
       parent=SplitDecorManagerLeash#13702
       zOrderRelativeOf=none
-      activeBuffer=[1264x1337:268437760,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={dequeueTime:90634442037403, 10:8bytes, 9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
+      activeBuffer=[1264x1337:268437760,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={10:8bytes, 9:4bytes, dequeueTime:91085810499366}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (Dim layer#56) uid=10207
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
@@ -2164,7 +2634,7 @@ Window Infos:
       layerStack=   0, z=        0, pos=(0,1264), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000100, tr=[0.00, 0.00][0.00, 0.00]
       parent=SplitDecorManagerLeash#13705
       zOrderRelativeOf=none
-      activeBuffer=[1264x1422:268437760,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={10:8bytes, dequeueTime:90634448476465, 9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
+      activeBuffer=[1264x1422:268437760,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={dequeueTime:91085817202231, 9:4bytes, 10:8bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (Dim layer#57) uid=10207
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
@@ -2180,6 +2650,112 @@ Window Infos:
       layerStack=   0, z=        1, pos=(0,0), size=(   0,   0), crop=[  0,   0, 1264, 2780], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
       parent=none
       zOrderRelativeOf=DefaultTaskDisplayArea#10
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ Layer (Task=710#24523) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        2, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=DefaultTaskDisplayArea#10
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes, taskId:710}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ Layer (8e55b14 ActivityRecordInputSink com.qiyi.video/org.qiyi.android.video.MainActivity#24532) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=-2147483648, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=ActivityRecord{303f167 u0 com.qiyi.video/.WelcomeActivity t710}#24524
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ Layer (ActivityRecord{303f167 u0 com.qiyi.video/.WelcomeActivity t710}#24524) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Task=710#24523
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ Layer (d26c842 com.qiyi.video/com.qiyi.video.WelcomeActivity#24535) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(   0,   0), crop=[  0,   0,   0,   0], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=ActivityRecord{303f167 u0 com.qiyi.video/.WelcomeActivity t710}#24524
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ Layer (Background for SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#24577) uid=10349
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=-2147483648, pos=(0,438), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=1, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000002, tr=[0.00, 0.00][0.00, 0.00]
+      parent=SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#24575
+      zOrderRelativeOf=com.qiyi.video/com.qiyi.video.WelcomeActivity#24573
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ Layer (SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#24575) uid=10349
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=       -1, pos=(0,438), size=(   0,   0), crop=[  0,   0, 1264, 711], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Bounds for - com.qiyi.video/com.qiyi.video.WelcomeActivity#24574
+      zOrderRelativeOf=com.qiyi.video/com.qiyi.video.WelcomeActivity#24573
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ Layer (SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity](BLAST)#24576) uid=10349
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,438), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=1, invalidate=0, dataspace=BT709 SMPTE_170M Limited range, defaultPixelFormat=Unknown 0x7fa30c06, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000102, tr=[0.99, 0.00][0.00, 0.99]
+      parent=SurfaceView[com.qiyi.video/com.qiyi.video.WelcomeActivity]#24575
+      zOrderRelativeOf=none
+      activeBuffer=[1280x 720:809503488,Unknown 0x7fa30c06], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={10:8bytes, dequeueTime:91116045183469, 9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ Layer (com.qiyi.video/com.qiyi.video.WelcomeActivity#24573) uid=10349
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=1)
+    [  0,   0, 1264, 2780]
+  Region SurfaceDamageRegion (this=0 count=1)
+    [559, 1205, 1229, 2553]
+      layerStack=   0, z=        0, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000100, tr=[0.00, 0.00][0.00, 0.00]
+      parent=d26c842 com.qiyi.video/com.qiyi.video.WelcomeActivity#24535
+      zOrderRelativeOf=none
+      activeBuffer=[1264x2780:268437760,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={10:8bytes, ownerPID:21569, ownerUID:10349, dequeueTime:91133174166431, windowType:1, 9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ Layer (Bounds for - com.qiyi.video/com.qiyi.video.WelcomeActivity#24574) uid=10349
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(   0,   0), crop=[  0,   0, 1264, 2780], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=com.qiyi.video/com.qiyi.video.WelcomeActivity#24573
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ Layer (ImeContainer#13) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        1, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=ActivityRecord{303f167 u0 com.qiyi.video/.WelcomeActivity t710}#24524
+      zOrderRelativeOf=d26c842 com.qiyi.video/com.qiyi.video.WelcomeActivity#24535
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ Layer (WindowToken{c142a0a type=2011 android.os.Binder@9f90dac}#111) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=ImeContainer#13
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ Layer (Surface(name=69c3118 InputMethod)/@0x59f50cf - animation-leash of insets_animation#24595) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,140), size=(   0,   0), crop=[  0,   0,   0,   0], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,0.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowToken{c142a0a type=2011 android.os.Binder@9f90dac}#111
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ Layer (69c3118 InputMethod#128) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,140), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,0.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Surface(name=69c3118 InputMethod)/@0x59f50cf - animation-leash of insets_animation#24595
+      zOrderRelativeOf=none
       activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (Leaf:3:12#11) uid=1000
   Region TransparentRegion (this=0 count=0)
@@ -2223,12 +2799,13 @@ Window Infos:
       activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (OplusOSEdgeFloatBar#16642) uid=10184
   Region TransparentRegion (this=0 count=0)
-  Region VisibleRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=1)
+    [1202, 279, 1264, 615]
   Region SurfaceDamageRegion (this=0 count=0)
-      layerStack=   0, z=        0, pos=(1202,279), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000101, tr=[0.00, 0.00][0.00, 0.00]
+      layerStack=   0, z=        0, pos=(1202,279), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000100, tr=[0.00, 0.00][0.00, 0.00]
       parent=520d14f OplusOSEdgeFloatBar#16641
       zOrderRelativeOf=none
-      activeBuffer=[  62x 336:268437760,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={windowType:2314, dequeueTime:89692630731408, 10:8bytes, 9:4bytes, ownerUID:10184, ownerPID:8871}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
+      activeBuffer=[  62x 336:268437760,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={dequeueTime:91102014072433, 10:8bytes, ownerPID:8871, ownerUID:10184, windowType:2314, 9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (WindowToken{8690405 type=2314 android.os.BinderProxy@233d37c}#24468) uid=1000
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
@@ -2285,7 +2862,7 @@ Window Infos:
       parent=Leaf:15:15#16
       zOrderRelativeOf=none
       activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
-+ Layer (Surface(name=6a97a7b StatusBar)/@0x74077d1 - animation-leash of insets_animation#24479) uid=1000
++ Layer (Surface(name=6a97a7b StatusBar)/@0x74077d1 - animation-leash of insets_animation#24593) uid=1000
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
   Region SurfaceDamageRegion (this=0 count=0)
@@ -2298,17 +2875,18 @@ Window Infos:
   Region VisibleRegion (this=0 count=0)
   Region SurfaceDamageRegion (this=0 count=0)
       layerStack=   0, z=        0, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
-      parent=Surface(name=6a97a7b StatusBar)/@0x74077d1 - animation-leash of insets_animation#24479
+      parent=Surface(name=6a97a7b StatusBar)/@0x74077d1 - animation-leash of insets_animation#24593
       zOrderRelativeOf=none
       activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (StatusBar#88) uid=10207
   Region TransparentRegion (this=0 count=0)
-  Region VisibleRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=1)
+    [  0,   0, 1264, 140]
   Region SurfaceDamageRegion (this=0 count=0)
       layerStack=   0, z=        0, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000100, tr=[0.00, 0.00][0.00, 0.00]
       parent=6a97a7b StatusBar#79
       zOrderRelativeOf=none
-      activeBuffer=[1264x 140:268437760,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={dequeueTime:90634457398340, windowType:2000, 9:4bytes, ownerUID:10207, ownerPID:4255, 10:8bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
+      activeBuffer=[1264x 140:268437760,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={10:8bytes, windowType:2000, dequeueTime:91132357258307, ownerUID:10207, ownerPID:4255, 9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (bubble_surface#1635) uid=10207
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
@@ -2389,14 +2967,6 @@ Window Infos:
       parent=WindowToken{3cf0581 type=2040 android.os.BinderProxy@34d588b}#76
       zOrderRelativeOf=none
       activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
-+ Layer (NotificationShade#24477) uid=10207
-  Region TransparentRegion (this=0 count=0)
-  Region VisibleRegion (this=0 count=0)
-  Region SurfaceDamageRegion (this=0 count=0)
-      layerStack=   0, z=        0, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00200100, tr=[0.00, 0.00][0.00, 0.00]
-      parent=ab6f267 NotificationShade#77
-      zOrderRelativeOf=none
-      activeBuffer=[1264x2780:268437760,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={10:8bytes, ownerPID:4255, ownerUID:10207, 9:4bytes, dequeueTime:90639187273495, windowType:2040}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (HideDisplayCutout:18:55#24) uid=1000
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
@@ -2445,11 +3015,11 @@ Window Infos:
       parent=Leaf:56:57#28
       zOrderRelativeOf=none
       activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
-+ Layer (Surface(name=ac340da NavigationBar_displayId_0)/@0xaecc6f8 - animation-leash of insets_animation#24478) uid=1000
++ Layer (Surface(name=ac340da NavigationBar_displayId_0)/@0xaecc6f8 - animation-leash of insets_animation#24592) uid=1000
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
   Region SurfaceDamageRegion (this=0 count=0)
-      layerStack=   0, z=        0, pos=(0,2682), size=(   0,   0), crop=[  0,   0,   0,   0], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
+      layerStack=   0, z=        0, pos=(0,2626), size=(   0,   0), crop=[  0,   0,   0,   0], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
       parent=WindowToken{46a73fc type=2019 android.os.BinderProxy@e3f95ce}#68
       zOrderRelativeOf=none
       activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
@@ -2457,18 +3027,19 @@ Window Infos:
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
   Region SurfaceDamageRegion (this=0 count=0)
-      layerStack=   0, z=        0, pos=(0,2682), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
-      parent=Surface(name=ac340da NavigationBar_displayId_0)/@0xaecc6f8 - animation-leash of insets_animation#24478
+      layerStack=   0, z=        0, pos=(0,2626), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=BT709 sRGB Full range, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Surface(name=ac340da NavigationBar_displayId_0)/@0xaecc6f8 - animation-leash of insets_animation#24592
       zOrderRelativeOf=none
       activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (NavigationBar_displayId_0#81) uid=10207
   Region TransparentRegion (this=0 count=0)
-  Region VisibleRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=1)
+    [  0, 2626, 1264, 2780]
   Region SurfaceDamageRegion (this=0 count=0)
-      layerStack=   0, z=        0, pos=(0,2682), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000100, tr=[0.00, 0.00][0.00, 0.00]
+      layerStack=   0, z=        0, pos=(0,2626), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000100, tr=[0.00, 0.00][0.00, 0.00]
       parent=ac340da NavigationBar_displayId_0#69
       zOrderRelativeOf=none
-      activeBuffer=[1264x 154:268437760,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={ownerUID:10207, dequeueTime:90634446666986, windowType:2019, 9:4bytes, 10:8bytes, ownerPID:4255}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
+      activeBuffer=[1264x 154:268437760,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={ownerUID:10207, ownerPID:4255, 10:8bytes, dequeueTime:91102668957693, windowType:2019, 9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (WindowToken{c97a96d type=2024 android.os.BinderProxy@2998d84}#72) uid=1000
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
@@ -2519,12 +3090,13 @@ Window Infos:
       activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (ScreenDecorOverlay#62) uid=10207
   Region TransparentRegion (this=0 count=0)
-  Region VisibleRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=1)
+    [  0,   0, 1264, 320]
   Region SurfaceDamageRegion (this=0 count=0)
       layerStack=   0, z=        0, pos=(0,0), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000140, tr=[0.00, 0.00][0.00, 0.00]
       parent=f0f05ef ScreenDecorOverlay#59
       zOrderRelativeOf=none
-      activeBuffer=[1264x 320:268437794,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={ownerPID:4255, 10:8bytes, ownerUID:10207, windowType:2024, dequeueTime:90634444548288, 9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
+      activeBuffer=[1264x 320:268437794,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={ownerUID:10207, ownerPID:4255, 10:8bytes, 9:4bytes, dequeueTime:91085812949887, windowType:2024}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (WindowToken{d316756 type=2024 android.os.BinderProxy@bf75d71}#60) uid=1000
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
@@ -2543,12 +3115,13 @@ Window Infos:
       activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (ScreenDecorOverlayBottom#66) uid=10207
   Region TransparentRegion (this=0 count=0)
-  Region VisibleRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=1)
+    [  0, 2460, 1264, 2780]
   Region SurfaceDamageRegion (this=0 count=0)
       layerStack=   0, z=        0, pos=(0,2460), size=(   0,   0), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000140, tr=[0.00, 0.00][0.00, 0.00]
       parent=8f4a2e2 ScreenDecorOverlayBottom#61
       zOrderRelativeOf=none
-      activeBuffer=[1264x 320:268437794,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={10:8bytes, windowType:2024, dequeueTime:90634452422715, 9:4bytes, ownerUID:10207, ownerPID:4255}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
+      activeBuffer=[1264x 320:268437794,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={ownerPID:4255, 10:8bytes, windowType:2024, dequeueTime:91085821215929, 9:4bytes, ownerUID:10207}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 + Layer (HideDisplayCutout:58:64#29) uid=1000
   Region TransparentRegion (this=0 count=0)
   Region VisibleRegion (this=0 count=0)
@@ -2751,11 +3324,14 @@ Window Infos:
       activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0 metadata={9:4bytes}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
 
 Offscreen Layers:
-Layer Task=627#2995 pid:2711 uid:1000 handleAlive
+Layer Surface(name=Task=710)/@0x8cc765f_transition-leash#24556 pid:4255 uid:10207 handleAlive
+Layer Surface(name=Task=1)/@0x2728efe_transition-leash#24555 pid:4255 uid:10207 handleAlive
+Layer Surface(name=Task=1)/@0x6867fb4_transition-leash#24517 pid:4255 uid:10207 handleAlive
 Layer Task=629#3056 pid:2711 uid:1000 handleAlive
 Layer Task=699#20017 pid:2711 uid:1000 handleAlive
 Layer Task=707#23618 pid:2711 uid:1000 handleAlive
 Layer Surface(name=Task=707)/@0xb0b3ea9_transition-leash#23623 pid:4255 uid:10207 handleAlive
+Layer Surface(name=WallpaperWindowToken{9245df6 token=android.os.Binder@4d78a91})/@0x1c0bf52_transition-leash#24518 pid:4255 uid:10207 handleAlive
 Layer Surface(name=Task=707)/@0xeb26b10_transition-leash#23632 pid:4255 uid:10207 handleAlive
 Layer Surface(name=69c3118 InputMethod)/@0x59f50cf - animation-leash of insets_animation#13727 pid:2711 uid:1000 handleAlive
 Layer Task=649#7624 pid:2711 uid:1000 handleAlive
